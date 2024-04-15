@@ -12,6 +12,11 @@ public class ImageBluerer extends JFrame {
     private BufferedImage newImage;
 
     public ImageBluerer(){
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setTitle("Image Blurrer");
+        setSize(800, 600);
+        setLocationRelativeTo(null);
+        setLayout(new BorderLayout());
 
     }
 
