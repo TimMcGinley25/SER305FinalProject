@@ -15,7 +15,7 @@ public class ImageBluerer extends JFrame {
 
     }
 
-    private void updateBufferer(){
+    private void updateBuff(){
 
     }
 
