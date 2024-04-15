@@ -19,7 +19,7 @@ public class ImageBluerrer extends JFrame {
 
     }
 
-    private BufferedImage {
+    private BufferedImage applyBlur(BufferedImage src, int radius){
         
     }
 
