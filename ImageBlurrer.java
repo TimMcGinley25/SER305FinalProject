@@ -8,6 +8,19 @@ public class ImageBlurrer extends JFrame {
 	private BufferedImage newImage;
 
 	public ImageBlurrer() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setTitle("Image Blurrer");
+        setSize(800, 600);
+        setLocationRelativeTo(null);
+        setLayout(new BorderLayout());
+
+		try{
+			originalImage = imageIO.read(new File("image.png"));
+			imageLabel = new JLabel(bew ImageIcon(originalImage));
+		}catch (IOException e){
+			e.printStackTrace();
+			imageLabel = new JLabel("Unable to load image.png")
+		}
 
 	}
 
