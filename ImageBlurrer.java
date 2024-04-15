@@ -1,31 +1,31 @@
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.IOException;
 
 public class ImageBlurrer extends JFrame {
 	private JSlider blurSlider;
 	private JLabel imageLabel;
-	private BufferedImage orignalImage;
+	private BufferedImage originalImage;
 	private BufferedImage newImage;
 
 	public ImageBlurrer() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setTitle("Image Blurrer");
-        setSize(800, 600);
-        setLocationRelativeTo(null);
-        setLayout(new BorderLayout());
+		setTitle("Image Blurrer");
+		setSize(800, 600);
+		setLocationRelativeTo(null);
+		setLayout(new BorderLayout());
 
-		try{
-			originalImage = imageIO.read(new File("image.png"));
-			imageLabel = new JLabel(bew ImageIcon(originalImage));
-		}catch (IOException e){
+		try {
+			originalImage = ImageIO.read(new File("image.png"));
+			imageLabel = new JLabel(new ImageIcon(originalImage));
+		} catch (IOException e) {
 			e.printStackTrace();
 			imageLabel = new JLabel("Unable to load image.png");
 		}
-		add(imageLabel, BorderLayout.CEN)
+		add(imageLabel, BorderLayout.CENTER);
 
 	}
 
