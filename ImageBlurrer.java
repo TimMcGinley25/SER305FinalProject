@@ -1,5 +1,9 @@
 import javax.swing.*;
+import java.awt.*;
 import java.awt.image.BufferedImage;
+import javax.imageio.ImageIO;
+import java.io.File;
+import java.io.IOException;
 
 public class ImageBlurrer extends JFrame {
 	private JSlider blurSlider;
@@ -19,8 +23,9 @@ public class ImageBlurrer extends JFrame {
 			imageLabel = new JLabel(bew ImageIcon(originalImage));
 		}catch (IOException e){
 			e.printStackTrace();
-			imageLabel = new JLabel("Unable to load image.png")
+			imageLabel = new JLabel("Unable to load image.png");
 		}
+		add(imageLabel, BorderLayout.CEN)
 
 	}
 
