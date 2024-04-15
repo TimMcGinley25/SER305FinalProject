@@ -5,17 +5,17 @@ import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.IOException;
 
-public class ImageBluerrer extends JFrame {
+public class ImageBluerer extends JFrame {
     private JSlider blurSlider;
     private JLabel imageLabel;
     private BufferedImage orignalImage;
     private BufferedImage newImage;
 
-    public ImageBluerrer(){
+    public ImageBluerer(){
 
     }
 
-    private void updateBufferrer(){
+    private void updateBufferer(){
 
     }
 
