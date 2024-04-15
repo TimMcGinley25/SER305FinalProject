@@ -27,6 +27,14 @@ public class ImageBlurrer extends JFrame {
 		}
 		add(imageLabel, BorderLayout.CENTER);
 
+		blurSlider = new JSlider(0, 20, 0);
+        blurSlider.setMajorTickSpacing(5);
+        blurSlider.setMinorTickSpacing(1);
+        blurSlider.setPaintTicks(true);
+        blurSlider.setPaintLabels(true);
+        blurSlider.addChangeListener(e -> updateBlur());
+        add(blurSlider, BorderLayout.SOUTH);
+
 	}
 
 	public static void main(String[] args) {
