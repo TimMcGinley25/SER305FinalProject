@@ -18,7 +18,7 @@ public class ImageBlurrer extends JFrame {
 		});
 	}
 
-	private void updateBuffer() {
+	private void updateBlur() {
 
 	}
 
