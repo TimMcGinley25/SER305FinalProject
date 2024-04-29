@@ -45,11 +45,12 @@ public class ImageBlurrer extends JFrame {
 	}
 
 	private void updateBlur() {
-
+		newImage = applyBlur(originalImage, blurSlider.getValue());
+		imageLabel.setIcon(new ImageIcon(newImage));
 	}
 
-	private BufferedImage applyBlur(BufferedImage src, int radius) {
-
+	private BufferedImage applyBlur(BufferedImage src, float radius) {
+		return src.getSubimage(0, 0, (int) ((1 + radius) * 8), (int) ((1 + radius) * 8));
 	}
 
 
