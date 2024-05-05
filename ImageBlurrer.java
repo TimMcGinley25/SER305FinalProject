@@ -22,11 +22,11 @@ public class ImageBlurrer extends JFrame {
 		setLayout(new BorderLayout());
 
 		try {
-			originalImage = ImageIO.read(new File("pik.png"));
+			originalImage = ImageIO.read(new File("dog-poster.png"));
 			imageLabel = new JLabel(new ImageIcon(originalImage));
 		} catch (IOException e) {
 			e.printStackTrace();
-			imageLabel = new JLabel("Unable to load pik.png");
+			imageLabel = new JLabel("Unable to load dog-poster.png");
 		}
 		add(imageLabel, BorderLayout.CENTER);
 
